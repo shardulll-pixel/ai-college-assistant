@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- existing libraries (UNCHANGED) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>AI College Assistant Chatbot</title>
+</head>
+
+<body> 
+
+
+    <!-- Background Video -->
+     <video autoplay muted loop id="bgVideo">
+    <source src="galaxy.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+    <!-- Header (reused) -->
+    <header>
+        <a href="#" class="logo">AI Assistant</a>
+
+        <nav>
+            <a href="#" class="active">Chatbot</a>
+        </nav>
+    </header>
+
+    <!-- Home Section (reused layout) -->
+    <section class="home">
+
+        <!-- Image area reused as visual block -->
+        <div class="home-img">
+            <img src="main.jpg" alt="AI Assistant" />
+        </div>
+
+        <!-- Content converted to chatbot -->
+        <div class="home-content">
+
+            <h1>College <span>AI Assistant</span></h1>
+
+            <!-- Typing animation reused -->
+            <h3 class="typing-text">Your <span></span></h3>
+
+            <p>
+                Ask any college-related question about attendance, exams, offices,
+                scholarship, admission process, or certificates.
+            </p>
+
+            <!-- Chat Input -->
+            <textarea id="userInput" placeholder="Ask your college question here..."></textarea>
+
+            <!-- SAME button -->
+            <a class="btn" onclick="askAI()">Ask AI</a>
+
+            <!-- Answer -->
+            <div id="answerBox">
+                <p id="answerText"></p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
