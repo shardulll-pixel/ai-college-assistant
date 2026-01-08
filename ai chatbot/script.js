@@ -88,8 +88,8 @@ async function askAI() {
 
     output.innerText = "Thinking...";
 
-    // 🔑 PASTE YOUR GEMINI API KEY HERE
-    const API_KEY = "PASTE_YOUR_GEMINI_API_KEY_HERE";
+    // 🔑 API
+    const API_KEY = "AIzaSyD3dzFlXiY9IqnG_jVabUwkJdvC7v5yO88";
 
     const requestBody = {
         contents: [
@@ -137,3 +137,4 @@ async function askAI() {
         output.innerText = "Error connecting to AI. Please try again.";
     }
 }
+
